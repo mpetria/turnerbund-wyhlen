@@ -59,7 +59,7 @@
 
 .sidenav a::before {
   content: "\f105";
-  font-family: "FontAwesome";
+  font-family: fontawesome, sans-serif;
   position: absolute;
   left: 0;
 }
