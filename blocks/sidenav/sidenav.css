@@ -57,7 +57,7 @@
   text-decoration: none;
 }
 
-.sidenav a:before {
+.sidenav a::before {
   content: "\f105";
   font-family: "FontAwesome";
   position: absolute;
