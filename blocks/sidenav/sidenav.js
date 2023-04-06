@@ -20,6 +20,19 @@ export default async function decorate(block) {
     sidenav.innerHTML = html;
 
     decorateIcons(sidenav);
+
+    const links = sidenav.querySelector('#links + ul');
+    if (links) {
+      links.classList.add('links');
+    }
+
+    const menus = sidenav.querySelectorAll('h4:not(#links) + ul');
+    if (menus) {
+      [...menus].forEach(menu => {
+        menu.classList.add('menu');
+      });
+    }
+
     block.append(sidenav);
   }
 }
